@@ -1,4 +1,3 @@
-apply plugin: 'com.android.library'
 
 description = 'the header MaterialHeader of SmartRefreshLayout'
 
@@ -9,8 +8,6 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 34
-        versionCode 1
-        versionName SMART_VERSION
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -21,6 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.scwang.smart.refresh.header.material'
 
 }
 
